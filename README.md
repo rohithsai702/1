@@ -22,7 +22,7 @@ SECRET_KEY = ''
 DEVICE_ID = ''
 REGION_KEY = 'in'
 
-bulb = Bulb(
+lights = Bulb(
     client_id=CLIENT_ID,
     secret_key=SECRET_KEY,
     device_id=DEVICE_ID,
@@ -30,20 +30,20 @@ bulb = Bulb(
 )
 
 
-# Turn on the bulb
-bulb.turn_on()
+# Turn on the dimming-lights
+lights.turn_on()
 
 
-# Turn off the bulb
-bulb.turn_off()
+# Turn off the dimming-lights
+lights.turn_off()
 
 
-# Toggle the bulb
-bulb.set_toggle()
+# Toggle the dimming-lights
+lights.set_toggle()
 
 
-# Turn off the light bulb after 5 minutes
-bulb.set_toggle_timer(value=5)
+# Turn off the dimming-lights after 5 minutes
+lights.set_toggle_timer(value=5)
 
 
 #Other functions used
