@@ -1,4 +1,4 @@
-# Tuya Bulb Control #
+# tuya-cloud-dimming-lights #
 
 This project is developed using Tuya SDK, which enables you to quickly develop smart devices, branded APP, cloud development project, etc.
 
@@ -38,12 +38,34 @@ bulb.turn_on()
 bulb.turn_off()
 
 
+# Toggle the bulb
+bulb.set_toggle()
+
+
 # Turn off the light bulb after 5 minutes
 bulb.set_toggle_timer(value=5)
+
+
+#Other functions used
+#depends on the bulb used
+#check the bulb and its functions in api of the project
 ```
 <br>
 
-## Steps to use the API:
+
+<h3>Functions:</h3>
+Check the functions depending on the type of light you are using, incase of error use different version of the function <br>
+
+Dimming lights: on, off, brightness, etc
+<br>
+<br>
+
+<h3>Important:</h3>
+client_id, client_key,device_id are required for the project to work.
+<br>
+<br>
+
+## Procedure:
 #### Step 1: CLIENT_ID and SECRET_KEY
 - Register or Login on <a href="https://auth.tuya.com" target="_blanck">Tuya</a>.
 1. Create a cloud development project <a href="https://iot.tuya.com/cloud" target="_blanck">Cloud -> Project</a>.
@@ -62,6 +84,6 @@ bulb.set_toggle_timer(value=5)
 #### Step 3: Request access to API calls
 Go to <a href="https://iot.tuya.com/cloud/appinfo/cappId/setting" target="_blanck">Cloud -> API Group</a> and enable **Authorization management**, **Device Management** and **Device Control**.
 <br>
-
+<br>
 <h3>Note:</h3>
-In case of any errors , see the requirements file and install the libraries if needed.
+Install the requirements files libraies incase of errors, chaneg versions of function based on error and function used.
